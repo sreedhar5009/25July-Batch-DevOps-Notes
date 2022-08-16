@@ -124,9 +124,7 @@ declarative syntax consist of various blocks
      maven 'mymaven'
 }
 
-parameters{
-     string(name: 'repoName', defaultValue: 'https://github.com/Sonal0409/DevOpsCodeDemo.git')
-}
+
 
 agent any
 
@@ -136,7 +134,7 @@ stages{
     {
       steps{
            
-        git ${repoName}
+        git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
 
                }
 
@@ -238,3 +236,8 @@ press save
 > Whenever there is an update on the script in github, this jenkins code should run automatically
 
        > set up a trigger on the job
+       
+       
+ You can find the repo with jenkinsfile here:
+ 
+ https://github.com/Sonal0409/DevOpsCodeDemo/blob/master/Jenkinsfile
